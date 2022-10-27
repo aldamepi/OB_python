@@ -3,3 +3,5 @@
 #La carpeta lecciones
 lecciones/
 
+# DS_Store
+.DS_Store

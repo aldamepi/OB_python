@@ -5,3 +5,6 @@ lecciones/
 
 # DS_Store
 .DS_Store
+
+# pycharm's project
+.idea

@@ -35,17 +35,23 @@ class alumno:
     def atributos(self):
         print(self.__dict__)
     
-    def resultado(self):
+    # def resultado(self):
+    #     if self.nota >= 5:
+    #         print("El alumno %s ha aprobado con la nota: %s" %(self.nombre, self.nota))
+    #     else:
+    #         print("El alumno %s ha suspendido con la nota: %s" %(self.nombre, self.nota))
+
+    def __str__(self):
         if self.nota >= 5:
-            print("El alumno %s ha aprobado con la nota: %s" %(self.nombre, self.nota))
+            return "El alumno %s ha aprobado con la nota: %s" %(self.nombre, self.nota)
         else:
-            print("El alumno %s ha suspendido con la nota: %s" %(self.nombre, self.nota))
+            return "El alumno %s ha suspendido con la nota: %s" %(self.nombre, self.nota)
 
 
 a = alumno()
 a.atributos()
-a.resultado()
-
+# a.resultado()
+print(a)
 
 
 
